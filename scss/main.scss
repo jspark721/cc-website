@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'navigation';
 
 body {
   margin: 0;
@@ -93,7 +94,7 @@ button {
   left: 20px;
   top: 25px;
   position: absolute;
-  z-index: 3;
+  z-index: 11;
   img {
     width: 100%;
     height: 100%;

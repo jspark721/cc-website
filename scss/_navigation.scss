@@ -1,0 +1,125 @@
+@import 'variables';
+
+.menu--box {
+  position: fixed;
+  z-index: 10;
+  width: 30px;
+  height: 35px;
+  top: 0;
+  right: 30px;
+  background: $orange;
+  padding: 25px;
+  cursor: pointer;
+  transition: $ease;
+  p {
+    color: $white;
+    margin: 0;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-left: -4px;
+    margin-top: 10px;
+  }
+  &:hover {
+    transform: scale(1.05);
+    .menu--icon {
+      background: $lightorange;
+    }
+  }
+}
+
+.menu--icon {
+  position: relative;
+  width: 100%;
+  height: 3px;
+  margin-bottom: 22%;
+  border-radius: 20px;
+  background: $white;
+}
+
+
+.menu--box-close {
+  position: fixed;
+  transform: translateY(-100px);
+  z-index: 10;
+  width: 30px;
+  height: 35px;
+  top: 0;
+  right: 30px;
+  background: $white;
+  padding: 25px;
+  cursor: pointer;
+  transition: $ease;
+  p {
+    color: $orange;
+    margin: 0;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-left: -8px;
+    margin-top: 20px;
+  }
+}
+.menu--line, .menu--line2 {
+  position: relative;
+  width: 100%;
+  height: 3px;
+  margin-top: 7px;
+  border-radius: 20px;
+  background: $orange;
+}
+.menu--line {
+  transform: scale(1.1) rotate(45deg);
+}
+.menu--line2 {
+  margin-top: -2px;
+  transform: scale(1.1) rotate(-45deg);
+}
+
+
+.nav--open {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: $orange;
+  z-index: 9;
+  transition: $ease-slow;
+  transform: translateY(-100%);
+}
+
+.nav--main-content {
+  height: 80%;
+  width: 80%;
+  margin-top: 18%;
+}
+
+.nav--main-list {
+  list-style-type: none;
+  li {
+    margin-bottom: 20px;
+    font-family: $header;
+    color: $white;
+    text-transform: lowercase;
+    font-size: 3.5em;
+    font-weight: 800;
+  }
+  a {
+    margin-top: 10px;
+    color: $white;
+    &:hover {
+      color: $lightorange;
+    }
+  }
+}
+
+.nav--number {
+  font-size: 14px;
+  font-family: $body;
+  letter-spacing: 4px;
+  padding-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  &:hover {
+    text-decoration: none;
+  }
+}
