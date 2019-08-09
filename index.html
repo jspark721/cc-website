@@ -13,8 +13,11 @@
 </head>
 
 <body>
-  <div class="nav--open">
+  <div id="nav--main" class="nav--open">
     <div class="nav--main-content">
+      <div class="logo">
+        <img src="assets/cc-logo-sm.png" alt="crispy chicken small logo"/>
+      </div>
       <ul class="nav--main-list">
         <li><span class="nav--number">01</span><a>about</a></li>
         <li><span class="nav--number">02</span><a>our work</a></li>
@@ -25,13 +28,13 @@
     </div>
   </div>
   <nav class="navbox">
-    <div class="menu--box">
+    <div id="menu--box" onclick="openMenu()">
       <div class="menu--icon"></div>
       <div class="menu--icon"></div>
       <div class="menu--icon"></div>
       <p>menu</p>
     </div>
-    <div class="menu--box-close">
+    <div id="menu--close" onclick="closeMenu()">
       <div class="menu--line"></div>
       <div class="menu--line2"></div>
       <p>close</p>
